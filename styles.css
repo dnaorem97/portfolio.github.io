@@ -404,6 +404,7 @@ progress::-webkit-progress-value {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 33%;
+    flex-wrap: wrap;
     gap: 16px;
     }
 
