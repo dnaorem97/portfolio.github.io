@@ -11,13 +11,10 @@ nav {
     background-color: #000000;
     color: white;
     padding: 1rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* font-weight: bold; */
     font-size: 1.2rem;
-
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -456,3 +453,108 @@ progress::-webkit-progress-value {
       .btn:hover {
         background-color: #0056b3;
       }
+
+
+
+      @media screen and (max-width: 1024px){
+        nav {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: fit-content;
+        }
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        
+        }
+        
+        .about-container {
+            flex-direction: column;
+        }
+        
+        .profile {
+            flex-direction: column;
+        }
+    
+        .resume-content {
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contact-me-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .contact-form-container {
+            width: 90%;
+        }
+    
+        .hero h1 {
+            font-size: 2.5em;
+        }
+    
+        .hero p {
+            font-size: 1.2em;
+        }
+    
+        .home-about-me h2 {
+            font-size: 2em;
+        }
+    
+        .home-about-me p {
+            font-size: 1em;
+        }
+    
+        .featured-projects h2 {
+            font-size: 2em;
+        }
+    
+        .project img {
+            max-width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 600px){
+        nav {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: fit-content;
+        }
+        nav ul li a {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-me-container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            overflow-x: hidden;
+            align-items: center;
+        }
+        .contactme-item {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form-container {
+            width: 90%;
+        }
+    }
+    
